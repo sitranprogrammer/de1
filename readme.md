@@ -27,6 +27,10 @@ và
 
 > npm start
 
+# Chạy Production 
+
+> gulp build --production
+
 # Cấu hình
 
 - Xem file `config.json`
