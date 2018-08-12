@@ -21,6 +21,10 @@
 
 và 
 
+> npm audit fix
+
+Cài đặt Components 
+
 > bower update 
 
 # Chạy dự án 

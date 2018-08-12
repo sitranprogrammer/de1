@@ -10,12 +10,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/fullstackvietnam/fs-03-web-app.git"
+		"url": "git+https://github.com/fullstackvietnam/project.git"
 	},
 	"author": "FullStack VietNam",
 	"license": "ISC",
 	"bugs": {
-		"url": "https://github.com/fullstackvietnam/fs-03-web-app/issues"
+		"url": "https://github.com/fullstackvietnam/project/issues"
 	},
 	"homepage": "https://fullstackvietnam.com",
 	"dependencies": {
@@ -38,6 +38,7 @@
 		"gulp-rename": "^1.4.0",
 		"gulp-sass": "^4.0.1",
 		"gulp-sourcemaps": "^2.6.4",
+		"gulp-strip-comments": "^2.5.2",
 		"gulp-uglify": "^3.0.1",
 		"gulp-util": "^3.0.8",
 		"js-yaml": "^3.12.0",
