@@ -4,7 +4,7 @@ module.exports = function (gulp, $, browserSync) {
 		return gulp.src([
 				'./dist/css/*.css',
 			])
-			.pipe(cleanCSS({compatibility: 'ie8'}))
+			.pipe(cleanCSS({compatibility: 'ie8', level: {1: {specialComments: 0}}}))
 			.pipe($.rename({
                 suffix: '.min'
             }))
