@@ -6339,4 +6339,38 @@ footer img {
 body {
   font-family: Roboto; }
 
+.home-slide {
+  min-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #87509c;
+  color: #ffffff; }
+  .home-slide .btn-warning {
+    padding: 0 2rem; }
+  @media (max-width: 767.98px) {
+    .home-slide {
+      padding: 0 3rem;
+      background: #000000; } }
+
+.home-product {
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #1abc9c;
+  color: #ffffff;
+  padding: 5rem 1rem; }
+
+.home-team {
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #e7f1f8;
+  color: #000; }
+
 /*# sourceMappingURL=main.css.map */
