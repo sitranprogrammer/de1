@@ -18,6 +18,27 @@ body
 
 .home-team
 	+Section($xamtrang,$black,400px)
+	padding: 2rem 0rem
+	.bordertron
+		border-radius: 50%
+	+media-breakpoint-down(lg)
+		padding: 2rem 0rem
+		background-color: pink
 
+//home form
+.home-form
+	+Section($tquoise,$black,400px)
+	.home-form-with
+		+media-breakpoint-up(sm)
+			max-width: 60%
+	input,
+	textarea
+		background: darken($tquoise,10%)
+		border: darken($tquoise,10%)
+		&::-webkit-input-placeholder
+			color: $wisteria
 
-
+		&:focus,
+		&:active
+			background: darken($tquoise,15%)
+			border: darken($tquoise,15%)	
