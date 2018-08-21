@@ -2,13 +2,39 @@ body
 	font-family: Roboto
 
 .home-slide
-	+Section($tim,$whites,300px)
+	+Section($tim,$whites,400px)
 	.btn-warning
 		padding: 0 2rem
+	
 	+media-breakpoint-down(sm)
 		padding: 0 3rem
 		background: #000000
 
+.caption
+	h2
+		letter-spacing: 3px
+		font-weight: 900
+		font-size: 2.3rem
+		margin-top: 50px
+		position: relative
+		padding: 4rem 0rem 1rem 0rem
+		&::before
+			content: ""
+			position: absolute
+			display: block
+			background: grey
+			width: 8%
+			height: 4px
+			bottom: 0px
+			left: 46%
+			opacity: .4
+	p
+		font-size: 1.1rem
+		margin-top: 20px
+		padding: 0 6rem
+	+media-breakpoint-down(sm)
+		h2
+			margin: 20px 0
 
 
 .home-product
@@ -24,21 +50,81 @@ body
 	+media-breakpoint-down(lg)
 		padding: 2rem 0rem
 		background-color: pink
+.home_skill
+	background: lighten($clouds, 20%)
+	min-height: 168px
+	display: flex
+	justify-content: center
+	text-align: center
+	align-items: center
+	padding-top: 2rem
+	padding-bottom: 4rem
+	h2
+		padding-top: 0rem
+	h3
+		font-weight: bold
+	.progress-circle
+		position: relative
+		display: inline-block
+		margin: 1rem
+		width: 140px
+		height: 140px
+		border-radius: 50%
+		background-color: #ebebeb
+		&:after
+			content: ''
+			display: inline-block
+			width: 100%
+			height: 100%
+			border-radius: 50%
+			-webkit-animation: colorload 2s
+			animation: colorload 2s
+		span
+			font-size: 2.5rem
+			//font-weight: bold
+			color: #8b8b8b
+			position: absolute
+			left: 50%
+			top: 50%
+			display: block
+			width: 120px
+			height: 120px
+			line-height: 120px
+			margin-left: -60px
+			margin-top: -60px
+			text-align: center
+			border-radius: 50%
+			background: #fff
+			z-index: 1
+	.progress-90
+		&:after
+			background-image: linear-gradient(54deg, $peter-river 50%, transparent 50%, transparent), linear-gradient(270deg, $peter-river 50%, $basic 50%, $basic)
+	.progress-75
+		&:after
+			background-image: linear-gradient(0deg, #fc3154 50%, transparent 50%, transparent), linear-gradient(270deg, #fc3154 50%, #ebebeb 50%, #ebebeb)
+	.progress-70
+		&:after
+			background-image: linear-gradient(-18deg, #15c7a8 50%, transparent 50%, transparent), linear-gradient(270deg, #15c7a8 50%, #ebebeb 50%, #ebebeb)
+	.progress-85
+		&:after
+			background-image: linear-gradient(36deg, #eb7d4b 50%, transparent 50%, transparent), linear-gradient(270deg, #eb7d4b 50%, #ebebeb 50%, #ebebeb)
+	+media-breakpoint-down(sm)
+		.skill
+			padding: 1.5rem 0
 
-//home form
-.home-form
-	+Section($tquoise,$black,400px)
-	.home-form-with
-		+media-breakpoint-up(sm)
-			max-width: 60%
-	input,
-	textarea
-		background: darken($tquoise,10%)
-		border: darken($tquoise,10%)
-		&::-webkit-input-placeholder
-			color: $wisteria
 
-		&:focus,
-		&:active
-			background: darken($tquoise,15%)
-			border: darken($tquoise,15%)	
+
+
+.home-our-portfolo
+	+Section($clouds,$black,500px)
+		.laptop
+			padding-top: 2rem
+		p
+			text-transform: uppercase
+			padding: 1rem 0 2rem 0
+
+
+	
+
+
+

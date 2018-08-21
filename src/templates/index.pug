@@ -18,7 +18,7 @@ block body
 
 	section.home-product
 		.container
-			.row
+			.row.caption
 				.col
 					h2 SERVICES WE PROVIDE
 					p We are working with both individuals and businesses from all over the globe to create awesome websites and applications.  
@@ -46,7 +46,7 @@ block body
 						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis assumenda temporibus saepe, accusamus esse blanditii dasd ssadasdlka sjdlka.
 	section.home-team
 		.container
-			.row
+			.row.caption
 				.col
 					h2 hello
 					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint adipisci a dolor fugiat cumque
@@ -72,19 +72,51 @@ block body
 					h3 CEO
 					p LÀ MỘT SẾP ĐÉO CÓ GÌ NGOÀI 50 CM  VÀ 30PHUT
 	// day là form  thiếu phần section laptop + section laptop
+	section.home_skill
+		.container
+			.row.caption
+				.col.text-center
+					h2 WE GOT SKILLS!
+					p 
+					| Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+					br
+					| Facilis cupiditate sapiente nemo doloribus ipsam reiciendis maiores
+			.row.mt-5
+				-for(x = 1;x < 5;x++)
+					.col-sm-6.col-md-3.skill
+						-if(x==1)
+							.progress-circle.progress-90
+								span 90%
+							h3 WEB DESIGN
+						-if(x==2)
+							.progress-circle.progress-75
+								span 75%
+							h3 HTML / CSS
+						-if(x==3)
+							.progress-circle.progress-70
+								span 70%
+							h3 GRAPHIC DESIGN
+						-if(x==4)
+							.progress-circle.progress-85
+								span 85%
+							h3 UI / UX
 	// vs insert backgroud vs color cho form
-	section.home-form
-		.container.home-form-with
+	section.home-our-portfolo
+		.container
 			.row
-				.col
-					.litle-page.title-xam
-						h2 Lorem ipsum dolor sit amet consectetur adipisicing elit
-						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum reiciendis, autem porro assumenda veritatis velit impedit labore, quos modi saepe animi doloribus non totam libero sapiente molestiae itaque quas molestias.
-			.form-group.row.mb-sm-3
-				.col-sm-6.mb-4
-					input.form-control(type="text" placeholder="tai khoản")
-				.col-sm-6
-					input.form-control(type="password" placeholder="mat khau")
-			.form-group.row
-				.col
-					textarea.form-control(col="30" row="4")
+				.col.caption
+					h2 Our portfolo
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+			.row
+				.col-md-6
+					img.laptop(src="../img/home_products1.png", alt="", srcset="")
+				.col-md-6
+					img.laptop(src="../img/home_products2.png", alt="", srcset="")
+				.col-md-6
+					img.laptop(src="../img/home_products3.png", alt="", srcset="")
+				.col-md-6
+					img.laptop(src="../img/home_products4.png", alt="", srcset="")
+					
+
+	
