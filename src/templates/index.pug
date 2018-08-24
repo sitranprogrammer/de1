@@ -1,0 +1,28 @@
+extends _layout/layout
+
+block variables
+	- var title = 'Home'
+	- var description = 'Description for home page'
+	- var bodyclass = 'home'
+
+block body
+	section.home-slide
+		.container
+			.row
+				.col
+					h1 ĐỊNH HƯỚNG PHÁT TRIỂN
+			.row
+				.col
+					ul.list-group
+						li.list-group-item
+							a.btn(href="") TẤT CẢ
+						li.list-group-item
+							a.btn(href="") GROUP
+						li.list-group-item
+							a.btn(href="") TIN THỊ TRƯỞNG
+						li.list-group-item
+							a.btn(href="") TIN VỊT
+			.row
+				-for( var a=1;a<4;a++)
+					.col-sm-4
+						img(src="../img/home_sections_1.png", alt="")
