@@ -6389,7 +6389,8 @@ body {
     color: #000; }
     .home-slide .btn:hover {
       border-radius: 14px;
-      background-color: #00c4c9; }
+      background-color: #00c4c9;
+      color: #fff; }
   @media (min-width: 576px) {
     .home-slide ul.list-group {
       flex-wrap: wrap;
